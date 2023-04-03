@@ -1,14 +1,18 @@
 import { useState } from 'react'
 import { Button } from './components'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import HomePage from './pages/HomePage'
+import ContactPage from './pages/ContactPage'
 
 function App() {
 
   return (
-    <>
-      <div className='bg-cream px-[15%]'>
-        <h1>Hello world</h1>
-      </div>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/kontakt" element={<ContactPage />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
