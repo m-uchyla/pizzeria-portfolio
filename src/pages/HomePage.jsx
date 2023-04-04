@@ -1,11 +1,13 @@
 import React from 'react'
-import { Navbar, Footer } from '../components'
+import { Navbar, Footer, Hero } from '../components'
+
 
 const Home = () => {
   return (
     <>
-        <div className='bg-cream'>
+        <div >
             <Navbar />
+            <Hero />
             <Footer />
         </div>
     </>
