@@ -17,8 +17,9 @@ const Hero = () => {
       <div className='flex flex-col max-w-[60%]'>
         <h1 className='xl:text-[72px] text-[62px] text-zinc-700 font-bold'>Inne pizze są dobre, <br />
             Nasza pizza jest <span className='text-gradient'>najlepsza</span>.</h1>
-        <div className='w-[310px] mt-3'>
-          <Button text="Menu"/>
+        <div className='w-[500px] mt-3 flex gap-x-2'>
+          <Button text="Zamów online" background={"bg-orange-gradient"} border={""} color={"text-white"}/>
+          <Button text="Rezerwuj stolik" background={""} border={"border-[2px] border-primary"} color={"text-primary"}/>
         </div>
       </div>
     </div>

@@ -39,14 +39,14 @@
   background-clip: text;
 }
 
-.bg-orange-gradient:hover{
+.button:hover{
   --x: 100%;
   -webkit-box-shadow: 8px 8px 20px -14px rgba(66, 68, 90, 1);
 -moz-box-shadow: 8px 8px 20px -14px rgba(66, 68, 90, 1);
 box-shadow: 8px 8px 20px -14px rgba(66, 68, 90, 1);
 }
 
-.bg-orange-gradient:active {
+.button:active {
   transition: .5s;
   -webkit-box-shadow: inset 8px 8px 20px -14px rgba(66, 68, 90, 1);
 -moz-box-shadow: inset 8px 8px 20px -14px rgba(66, 68, 90, 1);
