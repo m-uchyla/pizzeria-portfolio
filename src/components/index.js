@@ -4,6 +4,7 @@ import Contact from "./sections/Contact";
 import Footer from "./sections/Footer";
 import Navbar from "./sections/Navbar";
 import Hero from "./sections/Hero";
+import Input from "./modules/Input";
 
 export{
     Button,
@@ -11,5 +12,6 @@ export{
     Contact,
     Footer,
     Navbar,
-    Hero
+    Hero,
+    Input
 }
