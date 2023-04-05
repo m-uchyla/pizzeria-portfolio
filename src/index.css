@@ -12,6 +12,33 @@
   var(--x, 0)/ 200%;
 }
 
+.text-gradient {
+  background: 
+  linear-gradient(90deg, var(--c1, #f45106),
+  var(--c2, #fa8907) 51%, var(--c1, #f45106)) 
+  var(--x, 0)/ 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.links {
+  transition: all .4s;
+  color: #060606;
+  cursor: pointer;
+}
+
+.links:hover {
+  transition: all .4s;
+  background: 
+  linear-gradient(90deg, var(--c1, #f45106),
+  var(--c2, #fa8907) 51%, var(--c1, #f45106)) 
+  var(--x, 0)/ 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 .bg-orange-gradient:hover{
   --x: 100%;
   -webkit-box-shadow: 8px 8px 20px -14px rgba(66, 68, 90, 1);

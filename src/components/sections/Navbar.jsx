@@ -4,16 +4,16 @@ import { logo } from '../../assets'
 
 const Navbar = () => {
   return (
-    <section id="navbar">
+    <section id="navbar" className='mt-2'>
       <div className='flex justify-between'>
-          <div className='flex flex-row items-center ml-16'>
+          <div className='flex flex-row items-center'>
             <span className='text-[28px]'> Pizza </span> 
             <img src={logo} className='w-[50px]'/> 
             <span className='text-[28px]'> Fun </span>
           </div>
-          <ul className='flex justify-between items-center mr-16'>
+          <ul className='flex justify-between items-center z-10'>
             {navLinks.map((link, index) => (
-              <li key={link.id} className='mr-4'> {link.title} </li>
+              <li key={link.id} className='mr-4 text-[20px] links'> {link.title} </li>
             ))}
           </ul>
         </div>
