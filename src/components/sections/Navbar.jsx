@@ -13,7 +13,7 @@ const Navbar = () => {
           </div>
           <ul className='flex justify-between items-center z-10'>
             {navLinks.map((link, index) => (
-              <li key={link.id} className='mr-4 text-[20px] links'> {link.title} </li>
+              <li key={link.id} className={`${index !== navLinks.length - 1 ? 'mr-10' : 'mr-0'} text-[20px] links`}> {link.title} </li>
             ))}
           </ul>
         </div>
