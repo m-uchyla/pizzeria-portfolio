@@ -25,7 +25,7 @@ return (
     <div className='flex flex-col items-center justify-between mt-[150px]'>
         <p className='text-[32px] font-semibold text-gradient'> Nie możesz się zdecydować? </p>
         <button onClick={() => handleClick()} className={`${!rotatePizza ? "rotate" : "nextRotate"}`}>
-            <img src={rollPizza} onClick={() => setTimeout(() => { pizzaChange() }, 2000)} className={`h-[300px] duration-[2000ms]`}/>
+            <img src={rollPizza} onClick={() => setTimeout(() => { pizzaChange() }, 2000)} className={`h-[300px] w-[300px] duration-[2000ms]`}/>
         </button>
         
         {rollPizza !== random ? <div className='flex'><p className='text-[32px] font-semibold text-gradient mr-3'>Twoja pizza na dziś to:</p> <span className='text-[32px] font-semibold text-zinc-700'>{rollPizza}</span></div> : 
