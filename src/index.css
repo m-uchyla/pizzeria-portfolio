@@ -74,3 +74,30 @@ box-shadow: inset 8px 8px 20px -14px rgba(66, 68, 90, 1);
   text-align: justify;
   text-align-last: center;
 }
+
+.rotate {
+  animation: rotate-keyframes 2.05s;
+}
+.nextRotate{
+  animation: nextRotate-keyframes 2.05s;
+}
+
+@keyframes rotate-keyframes {
+  from {
+   transform: rotate(0deg);
+  }
+ 
+  to {
+   transform: rotate(1440deg);
+  }
+ }
+
+ @keyframes nextRotate-keyframes {
+  from {
+   transform: rotate(0deg);
+  }
+ 
+  to {
+   transform: rotate(1440deg);
+  }
+ }
