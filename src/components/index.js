@@ -5,6 +5,8 @@ import Footer from "./sections/Footer";
 import Navbar from "./sections/Navbar";
 import Hero from "./sections/Hero";
 import Input from "./modules/Input";
+import TelInput from "./modules/TelInput";
+import Textarea from "./modules/Textarea";
 
 export{
     Button,
@@ -13,5 +15,7 @@ export{
     Footer,
     Navbar,
     Hero,
-    Input
+    Input,
+    TelInput,
+    Textarea
 }
