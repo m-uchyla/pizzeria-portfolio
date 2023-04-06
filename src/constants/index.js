@@ -1,29 +1,33 @@
 import { natural, local, time } from '../assets'
-import { salami, vege, meat, tomato, pepperoni, hamAndMushroms } from '../assets'
+import { salami, vege, meat, tomato, pepperoni, hamAndMushroms, random } from '../assets'
 
 export const pizzaNames = [
     {
-        id: salami,
+        img: random,
+        name: "random"
+    },
+    {
+        img: salami,
         name: "Salami"
     },
     {
-        id: vege,
+        img: vege,
         name: "Vege"
     },
     {
-        id: meat,
+        img: meat,
         name: "Meat"
     },
     {
-        id: tomato,
+        img: tomato,
         name: "Tomato"
     },
     {
-        id: pepperoni,
+        img: pepperoni,
         name: "Pepperoni"
     },
     {
-        id: hamAndMushroms,
+        img: hamAndMushroms,
         name: "Ham and Mushrooms"
     },
 ]
