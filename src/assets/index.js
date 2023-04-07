@@ -10,6 +10,7 @@ import tomato from './tomato.png'
 import vege from './vege.png'
 import meat from './meat.png'
 import hamAndMushroms from './hamAndMushroms.png'
+import logo2 from './logo2.png'
 
 export {
     logo,
@@ -23,6 +24,7 @@ export {
     tomato,
     vege,
     meat,
-    hamAndMushroms
+    hamAndMushroms,
+    logo2
     
 }

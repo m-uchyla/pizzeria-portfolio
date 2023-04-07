@@ -49,14 +49,13 @@ return (
         }
         </div>
         <div className='sm:w-[500px]'>
-            <div className='bg-white w-[360px] h-[360px] rounded-full flex items-center justify-center'>
+            <div className='bg-white w-[360px] h-[360px] rounded-full flex items-center justify-center menu-border-roller'>
                 <button disabled={blockPizza} onClick={() => handleClick()} className={`${!rotatePizza ? "rotate" : "none"}`}>
                     <img src={rollPizza.img} onClick={() => pizzaChange()} className={`h-[300px] w-[300px] duration-[2000ms]`}/>
                 </button>
             </div>
         </div>
     </div>
-    <div className='w-full h-[1px] bg-orange-gradient-pizzaRoller mt-10 mb-20'/>
 </>
   )
 }

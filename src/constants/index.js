@@ -112,3 +112,18 @@ export const menuList = [
         desc: "Pizza Pepperoni jest idealna na wieczór, ale boli pupa rano przy kupie, bo jest ostra.",
     }
 ]
+
+export const privacy = [
+    {
+        id: "politykaPrywatności",
+        title: "Polityka Prywatności"
+    },
+    {
+        id: "cookies",
+        title: "Cookies"
+    },
+    {
+        id: "regulamin",
+        title: "Regulamin"
+    },
+]
