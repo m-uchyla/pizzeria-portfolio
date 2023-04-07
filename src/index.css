@@ -12,6 +12,23 @@
   var(--x, 0)/ 200%;
 }
 
+.bg-orange-gradient-pizzaRoller{
+  background: rgba(247,245,242, 0.2);
+  background: linear-gradient(90deg, rgba(247,245,242,1) 0%, rgba(250,137,7,1) 30%, rgba(250,137,7,1) 50%, rgba(250,137,7,1) 70%, rgba(247,245,242,1) 100%);
+}
+
+.menu-border{
+  background: transparent;
+  border-radius: 30% 70% 62% 38% / 30% 44% 56% 70% ;
+}
+.menu-border:hover {
+  background: #fa8907;
+}
+
+.menu-border:hover .text-hover{
+  color: white;
+}
+
 .text-gradient {
   background: 
   linear-gradient(90deg, var(--c1, #f45106),

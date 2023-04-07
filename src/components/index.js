@@ -7,6 +7,7 @@ import Hero from "./sections/Hero";
 import Input from "./modules/Input";
 import TelInput from "./modules/TelInput";
 import Textarea from "./modules/Textarea";
+import Menu from "./sections/Menu"
 
 export{
     Button,
@@ -17,5 +18,6 @@ export{
     Hero,
     Input,
     TelInput,
-    Textarea
+    Textarea,
+    Menu
 }

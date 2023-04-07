@@ -3,7 +3,6 @@ import { Navbar, Footer, Hero } from '../components'
 import Ingredients from '../components/sections/Ingredients'
 import RandomPizzaRoller from '../components/sections/RandomPizzaRoller'
 
-
 const Home = () => {
 
 

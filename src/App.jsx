@@ -3,6 +3,7 @@ import { Button } from './components'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import HomePage from './pages/HomePage'
 import ContactPage from './pages/ContactPage'
+import MenuPage from './pages/MenuPage'
 import styles from './style';
 
 
@@ -17,6 +18,8 @@ function App() {
                 <Route path="/" element={<HomePage />} />
                 
                 <Route path="/kontakt" element={<ContactPage />} />
+
+                <Route path="/menu" element={<MenuPage />} />
               </Routes>
             </BrowserRouter>
           </div>
