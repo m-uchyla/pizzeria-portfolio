@@ -12,6 +12,15 @@
   var(--x, 0)/ 200%;
 }
 
+.bg-black-gradient {
+  background: linear-gradient(
+    144.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
+}
+
 .bg-orange-gradient-pizzaRoller{
   background: rgba(247,245,242, 0.2);
   background: linear-gradient(90deg, rgba(247,245,242,1) 0%, rgba(250,137,7,1) 30%, rgba(250,137,7,1) 50%, rgba(250,137,7,1) 70%, rgba(247,245,242,1) 100%);
@@ -50,7 +59,13 @@
   cursor: pointer;
 }
 
-.links:hover {
+.links-footer{
+  transition: all .4s;
+  color: #FFF;
+  cursor: pointer;
+}
+
+.links:hover, .links-footer:hover {
   transition: all .4s;
   background: 
   linear-gradient(90deg, var(--c1, #f45106),

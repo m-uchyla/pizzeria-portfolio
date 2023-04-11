@@ -27,15 +27,15 @@ const pizzaChange = () => {
 return (
 <>
     <div className='w-full h-[1px] bg-orange-gradient-pizzaRoller mt-20 mb-10'/>
-    <div className='flex items-center justify-around'>
-        <div className='sm:w-[500px]'>
+    <div className='flex items-center justify-between'>
+        <div className='sm:w-[600px]'>
         {rollPizza !== pizzaNames[0] ?
             <div className='flex flex-col items-center'>
                 <p className='text-[42px] font-semibold text-gradient'>Twoja pizza na dziś to:</p> 
                 <span className='text-[42px] font-semibold text-zinc-700'>{rollPizza.name.toUpperCase()}</span>
             </div>
             : 
-            <p className={`text-[42px] font-semibold text-gradient`}> Nie możesz się zdecydować? </p>
+            <p className={`text-[42px] mb-5 font-semibold text-gradient`}> Nie możesz się zdecydować? </p>
         }
         {rollPizza !== pizzaNames[0] ?
         <div className='flex flex-col items-center'>
@@ -48,7 +48,7 @@ return (
             <p className='text-[42px] font-semibold text-gradient'>Niech los zadecyduje za Ciebie!</p>
         }
         </div>
-        <div className='sm:w-[500px]'>
+        <div className='sm:w-[360px]'>
             <div className='bg-white w-[360px] h-[360px] rounded-full flex items-center justify-center menu-border-roller'>
                 <button disabled={blockPizza} onClick={() => handleClick()} className={`${!rotatePizza ? "rotate" : "none"}`}>
                     <img src={rollPizza.img} onClick={() => pizzaChange()} className={`h-[300px] w-[300px] duration-[2000ms]`}/>
