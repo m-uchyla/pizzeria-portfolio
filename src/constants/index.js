@@ -46,7 +46,7 @@ export const navLinks = [
     {
         id: "contact",
         title: "Kontakt",
-        href: "/contact"
+        href: "/kontakt"
     }
 ]
 

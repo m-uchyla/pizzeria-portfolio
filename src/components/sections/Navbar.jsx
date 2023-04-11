@@ -7,22 +7,35 @@ import styles from '../../style';
 const Navbar = () => {
   const [openCloseNav, setOpenCloseNav] = useState(false);
   const [initNav, setInitNav] = useState(true);
+  const [navbar, setNavbar] = useState(false);
+
+  const changeBackground = () => {
+    if(window.scrollY >= 30) {
+      setNavbar(true)
+    } else {
+      setNavbar(false)
+    }
+      
+  }
+
+  window.addEventListener('scroll', changeBackground);
 
   return (
     <div className='pb-10'>
-    <section id="navbar" className='my-2 py-3 absolute top-[-8px] left-0 w-full'>
+    <section id="navbar" className={`my-2 py-3 ${navbar ? "navbar-fixed active" : "navbar-absolute"} top-[-8px] left-0 w-full`}>
       <div className={`${styles.paddingX} ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
           <div className='flex justify-between'>
+            <a href='/'>
               <div className='flex flex-row items-center'>
-                <p className='text-[20px] text-zinc-700 font-semibold mr-1'>Pizza</p>
-                <GiFullPizza size={40} color='orange'/> 
-                <p className='text-[20px] text-zinc-700 font-semibold ml-1'>Eccezionale</p>
+                  <p className={`text-[20px] ${navbar ? "navbar-text-white" : "navbar-text"} font-semibold mr-1`}>Pizza</p>
+                  <GiFullPizza size={40} className={`${navbar ? 'icon-white' : 'icon-orange'}`}/> 
+                  <p className={`text-[20px] ${navbar ? "navbar-text-white" : "navbar-text"} font-semibold ml-1`}>Eccezionale</p>
               </div>
-              
-              <ul className='list-none sm:flex hidden justify-end items-center flex-1'>
+            </a>
+            <ul className='list-none sm:flex hidden justify-end items-center flex-1'>
                 {navLinks.map((link, index) => (
-                    <li key={link.id} className={`z-[999] links cursor-pointer text-[18px] text-white ${index === navLinks.length - 1 ? 'mr-0' : 'mr-5'}`} onClick={()=>handleClickScroll(link.id)}>{link.title}</li>
+                    <li key={link.id} className={`z-[99999] cursor-pointer text-[18px] ${navbar ? "navbar-text-white links-fixed" : "navbar-text links"} ${index === navLinks.length - 1 ? 'mr-0' : 'mr-5'}`} onClick={()=>handleClickScroll(link.id)}><a href={link.href}>{link.title}</a></li>
                 ))}
             </ul>
             <div className={`sm:hidden flex flex-1 justify-end items-center z-50`}>
