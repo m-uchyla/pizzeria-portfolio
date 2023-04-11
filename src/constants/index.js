@@ -36,17 +36,17 @@ export const navLinks = [
     {
         id: "menu",
         title: "Menu",
-        href: "menu"
+        href: "/menu"
     },
     {
         id: "about",
         title: "O Nas",
-        href: "about"
+        href: "/about"
     },
     {
         id: "contact",
         title: "Kontakt",
-        href: "contact"
+        href: "/contact"
     }
 ]
 
