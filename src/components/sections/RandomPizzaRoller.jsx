@@ -17,7 +17,7 @@ const handleClick = () =>{
 const pizzaChange = () => {
     if(!blockPizza){
     setTimeout(() => {
-        setRollPizza(pizzaNames[Math.floor(Math.random() * pizzaNames.length)]);
+        setRollPizza(pizzaNames[Math.floor(Math.random() * (pizzaNames.length-1))+1]);
     }, 2000) 
     } else {
         return null;

@@ -11,8 +11,8 @@ const Menu = () => {
             {menuList.map((item, index) => (
                 <motion.div 
                 className='flex flex-col items-center menu-border cursor-pointer'
-                whileHover={{ scale: 1.1 }}
-                transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                whileHover={{ scale: 1.02 }}
+                transition={{ type: "spring", stiffness: 300, damping: 5 }}
                 >
                     <div className='absolute w-[300px] h-[300px]'/>
                     <p className='text-zinc-700 text-hover text-[48px] z-10'>{item.name}</p>
