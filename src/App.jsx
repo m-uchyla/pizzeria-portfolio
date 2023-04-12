@@ -5,6 +5,7 @@ import HomePage from './pages/HomePage'
 import ContactPage from './pages/ContactPage'
 import MenuPage from './pages/MenuPage'
 import styles from './style';
+import PromoPage from './pages/PromoPage'
 
 
 function App() {
@@ -16,7 +17,9 @@ function App() {
             <BrowserRouter>
               <Routes>
                 <Route path="/" element={<HomePage />} />
-                
+
+                <Route path="/promocje" element={<PromoPage />} />
+
                 <Route path="/kontakt" element={<ContactPage />} />
 
                 <Route path="/menu" element={<MenuPage />} />

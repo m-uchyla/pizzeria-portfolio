@@ -1,5 +1,5 @@
 import Button from "./modules/Button";
-import About from "./sections/About";
+import Promo from "./sections/Promo";
 import Contact from "./sections/Contact";
 import Footer from "./sections/Footer";
 import Navbar from "./sections/Navbar";
@@ -11,7 +11,7 @@ import Menu from "./sections/Menu"
 
 export{
     Button,
-    About,
+    Promo,
     Contact,
     Footer,
     Navbar,

@@ -1,4 +1,4 @@
-import { natural, local, time } from '../assets'
+import { natural, local, time, pikantnyPoniedzialek, wegeWtorek, salamiSroda, czerstwyCzwartek, pracowityPiatek } from '../assets'
 import { salami, vege, meat, tomato, pepperoni, hamAndMushroms, random } from '../assets'
 
 export const pizzaNames = [
@@ -39,9 +39,9 @@ export const navLinks = [
         href: "/menu"
     },
     {
-        id: "about",
-        title: "O Nas",
-        href: "/about"
+        id: "promo",
+        title: "Promocje",
+        href: "/promocje"
     },
     {
         id: "contact",
@@ -126,4 +126,42 @@ export const privacy = [
         id: "regulamin",
         title: "Regulamin"
     },
+]
+
+export const promo = [
+    {
+        id: "pikantnyPoniedzialek",
+        name: "Pikantny Poniedziałek",
+        amount: "-15%",
+        desc: "Każdy poniedziałek świętujemy pikantnie, dlatego na każdą pizzę z dodatkiem pikantnych papryczek dajemy 15% zniżkę!",
+        img: pikantnyPoniedzialek
+    },
+    {
+        id: "wegeWtorek",
+        name: "Wege Wtorek",
+        amount: "-15%",
+        desc: "We wtorek każda bezmięsna pizza z 15% rabatem!",
+        img: wegeWtorek
+    },
+    {
+        id: "salamiSroda",
+        name: "Salami Środa",
+        amount: "-15%",
+        desc: "Środa to dzień SALAMI! 15% zniżki na każdą pizzę z dodatkiem salami!",
+        img: salamiSroda
+    },
+    {
+        id: "czerwstyCzwartek",
+        name: "Czerstwy Czwartek",
+        amount: "-20%",
+        desc: "Każda stara albo nieodebrana poprzedniego dnia przez klienta pizza za 20% mniej!",
+        img: czerstwyCzwartek
+    },
+    {
+        id: "pracowityPiątek",
+        name: "Pracowity Piątek",
+        amount: "-30%",
+        desc: "W piątki pracownicy na umowie o pracę bądź umowie zlecenie dostają rabat w wysokości 30%! (Umowy zlecenie nie sumują się)",
+        img: pracowityPiatek
+    }
 ]

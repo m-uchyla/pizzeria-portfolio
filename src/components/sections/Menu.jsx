@@ -10,6 +10,7 @@ const Menu = () => {
         <div className='grid grid-cols-2 gap-10 mt-20'>
             {menuList.map((item, index) => (
                 <motion.div 
+                key={item.id}
                 className='flex flex-col items-center menu-border cursor-pointer'
                 whileHover={{ scale: 1.02 }}
                 transition={{ type: "spring", stiffness: 300, damping: 5 }}

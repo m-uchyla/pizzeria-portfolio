@@ -19,7 +19,7 @@ const Footer = () => {
                 </a>
                 <ul className='flex items-center'>
                   {privacy.map((item, index) => (
-                    <li className={`links-footer ${index === privacy.length - 1 ? "mr-0" : "mr-5"} cursor-pointer`}>{item.title}</li>
+                    <li key={item.id} className={`links-footer ${index === privacy.length - 1 ? "mr-0" : "mr-5"} cursor-pointer`}>{item.title}</li>
                   ))}
                 </ul>
               </div>

@@ -11,6 +11,11 @@ import vege from './vege.png'
 import meat from './meat.png'
 import hamAndMushroms from './hamAndMushroms.png'
 import logo2 from './logo2.png'
+import pikantnyPoniedzialek from './pikantnyPoniedzialek.png'
+import wegeWtorek from './wegeWtorek.png'
+import salamiSroda from './salamiSroda.png'
+import czerstwyCzwartek from './czerstwyCzwartek.png'
+import pracowityPiatek from './pracowityPiatek.png'
 
 export {
     logo,
@@ -25,6 +30,11 @@ export {
     vege,
     meat,
     hamAndMushroms,
-    logo2
+    logo2,
+    pikantnyPoniedzialek,
+    wegeWtorek,
+    salamiSroda,
+    czerstwyCzwartek,
+    pracowityPiatek
     
 }
