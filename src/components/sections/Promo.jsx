@@ -6,7 +6,7 @@ const Promo = () => {
   
   return (
     <section>
-        <h1 className='text-[68px] font-bold text-gradient text-center'>PROMOCJE</h1>
+        <h1 className='sm:text-[68px] text-[48px] font-bold text-gradient text-center'>PROMOCJE</h1>
         <div className='w-full h-[1px] bg-orange-gradient-pizzaRoller mt-10 mb-20'/>
         <div className='grid grid-cols-1 gap-10 mt-20'>
             {promo.map((item, index) => (
