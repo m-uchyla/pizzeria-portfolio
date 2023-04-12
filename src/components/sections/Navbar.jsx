@@ -21,7 +21,7 @@ const Navbar = () => {
   window.addEventListener('scroll', changeBackground);
 
   return (
-    <div className='pb-10'>
+    <div className='sm:pb-10 pb-20'>
     <section id="navbar" className={`my-2 py-3 ${navbar ? "navbar-fixed active" : "navbar-absolute"} top-[-8px] left-0 w-full`}>
       <div className={`${styles.paddingX} ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
@@ -49,7 +49,7 @@ const Navbar = () => {
                     <ul className='list-none flex-col justify-end items-center flex-1 mt-10'>
                         {navLinks.map((link, index)=>(
                         <li key={link.id} className={`font-poppins text-[30px] text-white font-normal cursor-pointer`} onClick={()=>{handleClickScroll(link.id);setOpenCloseNav((prev) => !prev)}}>
-                            {link.title}
+                            <a href={link.href}>{link.title}</a>
                         </li>
                         ))}
                     </ul>

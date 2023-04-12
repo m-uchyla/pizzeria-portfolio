@@ -7,7 +7,7 @@ const Contact = () => {
 
   return (
     <section id="contact" className=' text-gray my-10'>
-        <div className='flex gap-36'>
+        <div className='flex sm:gap-36'>
           <div className='flex-1 my-5 py-5'>
             <h2 className='text-center font-bold text-[40px] m-10'>Kontakt</h2>
             <p className='text-justify-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in turpis ultricies, consequat justo vitae, consequat turpis. Nulla semper libero at orci sagittis dictum at in nulla. Donec ornare condimentum sem vitae ornare. Pellentesque consequat mauris at ex lobortis consectetur. Cras pellentesque laoreet lobortis. Sed accumsan nisi eget libero interdum pellentesque in pretium arcu. In at nibh nec tortor hendrerit porttitor.</p>

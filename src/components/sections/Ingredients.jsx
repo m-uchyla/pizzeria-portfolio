@@ -4,12 +4,12 @@ import { ingredients } from '../../constants'
 
 const Ingredients = () => {
   return (
-    <section className='mt-[200px]'>
-        <div className='flex justify-between'>
+    <section className='sm:mt-[200px] mt-[130px]'>
+        <div className='flex sm:flex-row flex-col justify-between'>
             {ingredients.map((onePiece, index) => (
-                <div className='flex '>
-                    <img src={onePiece.img} className='h-[80px] md:absolute static md:top-[680px] ml-[-40px]'/>
-                    <h2 className='z-10 mr-5 w-[280px] font-bold text-[38px] text-zinc-600'>{onePiece.title}</h2>
+                <div key={onePiece.id} className='flex items-center sm:mb-0 mb-10'>
+                    <img src={onePiece.img} className='sm:w-[80px] w-[60px] sm:h-[80px] h-[60px] sm:absolute relative md:top-[680px] sm:ml-[-40px]'/>
+                    <h2 className='z-10 sm:mr-5 mr-0 sm:w-[280px] font-bold sm:text-[38px] text-[24px] text-zinc-600'>{onePiece.title}</h2>
                 </div>
             ))}
         </div>

@@ -27,25 +27,25 @@ const pizzaChange = () => {
 return (
 <>
     <div className='w-full h-[1px] bg-orange-gradient-pizzaRoller mt-20 mb-10'/>
-    <div className='flex items-center justify-between'>
+    <div className='flex sm:flex-row flex-col items-center justify-between'>
         <div className='sm:w-[600px]'>
         {rollPizza !== pizzaNames[0] ?
-            <div className='flex flex-col items-center'>
-                <p className='text-[42px] font-semibold text-gradient'>Twoja pizza na dziś to:</p> 
-                <span className='text-[42px] font-semibold text-zinc-700'>{rollPizza.name.toUpperCase()}</span>
+            <div className='flex flex-col justify-center items-center'>
+                <p className='sm:text-[42px] text-[28px] font-semibold text-gradient'>Twoja pizza na dziś to:</p> 
+                <span className='sm:text-[42px] text-[25px] font-semibold text-zinc-700'>{rollPizza.name.toUpperCase()}</span>
             </div>
             : 
-            <p className={`text-[42px] mb-5 font-semibold text-gradient`}> Nie możesz się zdecydować? </p>
+            <p className={`sm:text-[42px] text-[25px] sm:mb-5 font-semibold text-gradient`}> Nie możesz się zdecydować? </p>
         }
         {rollPizza !== pizzaNames[0] ?
         <div className='flex flex-col items-center'>
             
-            <div className='w-[210px] mt-7'>
+            <div className='w-[210px] sm:mt-7 mb-5'>
                 <Button text="Zamów online" background={"bg-orange-gradient"} border={""} color={"text-white"} />
             </div>
         </div>
         : 
-            <p className='text-[42px] font-semibold text-gradient'>Niech los zadecyduje za Ciebie!</p>
+            <p className='sm:text-[42px] text-[23px] sm:mb-0 mb-5 font-semibold text-gradient'>Niech los zadecyduje za Ciebie!</p>
         }
         </div>
         <div className='sm:w-[360px]'>

@@ -7,7 +7,7 @@ const Menu = () => {
     <section>
         <h1 className='text-[68px] font-bold text-gradient text-center'>MENU</h1>
         <div className='w-full h-[1px] bg-orange-gradient-pizzaRoller mt-10 mb-20'/>
-        <div className='grid grid-cols-2 gap-10 mt-20'>
+        <div className='grid sm:grid-cols-2 grid-cols-1 gap-10 sm:mt-20 mt-5'>
             {menuList.map((item, index) => (
                 <motion.div 
                 key={item.id}
@@ -16,10 +16,10 @@ const Menu = () => {
                 transition={{ type: "spring", stiffness: 300, damping: 5 }}
                 >
                     <div className='absolute w-[300px] h-[300px]'/>
-                    <p className='text-zinc-700 text-hover text-[44px] z-10'>{item.name}</p>
+                    <p className='text-zinc-700 text-hover sm:text-[44px] text-[36px] z-10'>{item.name}</p>
                     <img src={item.img} className='w-[240px] z-10'/>
-                    <p className='text-zinc-400 text-hover text-[10px] w-[400px] z-10'>{item.ingredients}</p>
-                    <p className='text-zinc-700 text-[18px] w-[400px] z-10'>{item.desc}</p>
+                    <p className='text-zinc-400 text-hover text-[10px] sm:w-[400px] w-[230px] z-10'>{item.ingredients}</p>
+                    <p className='text-zinc-700 sm:text-start text-center sm:text-[18px] text-[15px] sm:w-[400px] w-[260px] z-10'>{item.desc}</p>
                 </motion.div>
             ))}
         </div>
