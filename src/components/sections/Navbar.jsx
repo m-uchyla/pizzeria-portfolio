@@ -41,7 +41,7 @@ const Navbar = () => {
             <div className={`sm:hidden flex flex-1 justify-end items-center z-50`}>
 
                 <div className={`${!openCloseNav ? 'menu_burger' : 'menu_burger open'}`}>
-                    <div className={`menu_burger-btn ${openCloseNav ? "fixed z-10" : "static z-10"}`} 
+                    <div className={` ${navbar ? "menu_burger-btn-fixed" : "menu_burger-btn"}  ${openCloseNav ? "fixed z-10" : "static z-10"}`} 
                     onClick={() => {setOpenCloseNav((prev) => !prev);setInitNav(false)}} 
                     />
                 </div>

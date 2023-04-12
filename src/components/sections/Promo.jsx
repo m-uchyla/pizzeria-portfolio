@@ -12,7 +12,7 @@ const Promo = () => {
             {promo.map((item, index) => (
                 <div key={item.id} className='flex even:flex-row odd:flex-row-reverse items-center justify-around'>
                   <div className='flex flex-col items-center '>
-                    <p className='text-zinc-700 text-[44px] font-semibold z-10'>{item.name}</p>
+                    <p className='text-zinc-700 text-[44px] invertedText font-semibold z-10'>{item.name}</p>
                     <p className={`text-white text-[50px] z-10 ${index % 2 ? "ml-[140px]" : "mr-[150px]"}`}>{item.amount}</p>
                     <div className='absolute promo-border w-[320px] h-[320px]'/>
                     <img src={item.img} className='max-w-[280px] max-h-[280px] mt-[-60px] z-10'/>
