@@ -1,5 +1,5 @@
 import React from 'react'
-import { Navbar, Footer, Contact } from '../components'
+import { Navbar, Footer, Contact, Map } from '../components'
 
 const ContactPage = () => {
   return (
@@ -7,6 +7,7 @@ const ContactPage = () => {
         <div className='bg-cream'>
             <Navbar />
             <Contact />
+            <Map />
             <Footer />
         </div>
     </>

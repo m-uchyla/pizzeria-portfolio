@@ -8,6 +8,8 @@ import Input from "./modules/Input";
 import TelInput from "./modules/TelInput";
 import Textarea from "./modules/Textarea";
 import Menu from "./sections/Menu"
+import Map from "./sections/Map";
+import LocationPin from "./modules/LocationPin";
 
 export{
     Button,
@@ -19,5 +21,7 @@ export{
     Input,
     TelInput,
     Textarea,
-    Menu
+    Menu,
+    Map,
+    LocationPin
 }
