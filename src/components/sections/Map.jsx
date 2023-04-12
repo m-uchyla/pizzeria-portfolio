@@ -15,7 +15,7 @@ const Map = ({ zoomLevel }) => {
   return (
     <section id="map" className='mt-20'>
         <div className="map text-gray">
-            <h2 className='text-center font-bold text-[40px] m-10 '>Odwiedź nas!</h2>
+            <h2 className='text-center font-bold text-[40px] text-gradient my-10 '>Odwiedź nas!</h2>
 
             <div className="shadow border-4 border-cream rounded-xl h-[500px] w-[100%]">
             <GoogleMapReact

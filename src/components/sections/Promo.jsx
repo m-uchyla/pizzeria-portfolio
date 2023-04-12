@@ -12,13 +12,13 @@ const Promo = () => {
             {promo.map((item, index) => (
                 <div key={item.id} className='flex sm:even:flex-row sm:odd:flex-row-reverse flex-col items-center justify-around'>
                   <div className='flex flex-col items-center'>
-                    <p className='text-zinc-700 text-[44px] invertedText font-semibold z-10'>{item.name}</p>
+                    <p className='text-zinc-700 text-[44px] text-center invertedText font-semibold z-10'>{item.name}</p>
                     <p className={`text-white text-[50px] z-10 ${index % 2 ? "ml-[140px]" : "mr-[150px]"}`}>{item.amount}</p>
                     <div className='absolute promo-border w-[320px] h-[320px]'/>
                     <img src={item.img} className='max-w-[280px] max-h-[280px] mt-[-60px] z-10'/>
                   </div>
-                  <div className='sm:mt-0 mt-14 sm:mb-0 mb-5'>
-                    <p className='text-zinc-700 sm:text-[26px] text-[20px] font-light sm:w-[400px] w-[300px] z-10'>{item.desc}</p>
+                  <div className={`sm:mt-0 ${index === promo.length - 1 ? "mt-2" : "mt-14"} sm:mb-0 mb-5`}>
+                    <p className={`text-zinc-700 sm:text-[26px] text-[20px] font-light sm:w-[400px] w-[300px] z-10`}>{item.desc}</p>
                   </div>
                 </div>
             ))}
