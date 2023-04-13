@@ -4,7 +4,7 @@ import {IoMdPin} from "react-icons/io"
 const LocationPin = ({lat, lng, text}) => {
   return (
     <div>
-      <IoMdPin size={50} className='text-primary' />
+      <IoMdPin size={50} className='text-primary absolute -left-6 -top-11' />
     </div>
   )
 }

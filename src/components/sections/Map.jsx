@@ -9,7 +9,7 @@ const Map = ({ zoomLevel }) => {
           lat: 52.23200271407807,
           lng: 21.006700239933
         },
-        zoom: 16
+        zoom: 13
       };
 
   return (
