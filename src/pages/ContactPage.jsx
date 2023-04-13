@@ -1,7 +1,12 @@
-import React from 'react'
+import {React, useEffect} from 'react'
 import { Navbar, Footer, Contact, Map } from '../components'
 
 const ContactPage = () => {
+
+  useEffect(() => {
+    document.title = `Kontakt - Pizza Eccezionale`;
+  });
+
   return (
     <>
         <div className='bg-cream'>

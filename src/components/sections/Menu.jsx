@@ -6,8 +6,13 @@ const Menu = () => {
   return (
     <section>
         <h1 className='text-[68px] font-bold text-gradient text-center'>MENU</h1>
-        <div className='w-full h-[1px] bg-orange-gradient-pizzaRoller mt-10 mb-20'/>
+        <div className='w-full h-[1px] bg-orange-gradient-pizzaRoller mt-10 mb-5'/>
+        <div className='text-center text-gray'>
+          <h2 className='font-bold text-lg'>Zadźwoń i zamów:</h2>
+          <h3>(+48) 123 456 789</h3>
+        </div>
         <div className='grid sm:grid-cols-2 grid-cols-1 gap-10 sm:mt-20 mt-5'>
+          
             {menuList.map((item, index) => (
                 <motion.div 
                 key={item.id}
