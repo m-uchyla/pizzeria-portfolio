@@ -9,7 +9,7 @@ const PromoPage = () => {
 
   return (
     <>
-        <Navbar />
+        <Navbar active={"promo"} />
         <Promo />
         <Footer />
     </>

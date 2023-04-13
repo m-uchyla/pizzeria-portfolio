@@ -10,7 +10,7 @@ const ContactPage = () => {
   return (
     <>
         <div className='bg-cream'>
-            <Navbar />
+            <Navbar active={"contact"} />
             <Contact />
             <Map />
             <Footer />

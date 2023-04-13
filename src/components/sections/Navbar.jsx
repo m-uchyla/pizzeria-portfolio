@@ -4,7 +4,7 @@ import { GiFullPizza } from "react-icons/gi";
 import styles from '../../style';
 
 
-const Navbar = () => {
+const Navbar = ({active}) => {
   const [openCloseNav, setOpenCloseNav] = useState(false);
   const [initNav, setInitNav] = useState(true);
   const [navbar, setNavbar] = useState(false);
@@ -35,7 +35,9 @@ const Navbar = () => {
             </a>
             <ul className='list-none sm:flex hidden justify-end items-center flex-1'>
                 {navLinks.map((link, index) => (
-                    <li key={link.id} className={`z-[99999] cursor-pointer text-[18px] ${navbar ? "navbar-text-white links-fixed" : "navbar-text links"} ${index === navLinks.length - 1 ? 'mr-0' : 'mr-5'}`} onClick={()=>handleClickScroll(link.id)}><a href={link.href}>{link.title}</a></li>
+                    <li key={link.id} className={`z-[99999] cursor-pointer text-[18px] ${navbar ? "navbar-text-white links-fixed" : "navbar-text links"} ${index === navLinks.length - 1 ? 'mr-0' : 'mr-5'}`} onClick={()=>handleClickScroll(link.id)}>
+                      <a href={link.href} className={`${(link.id == active) ? "font-bold" : ""}`}>{link.title}</a>
+                    </li>
                 ))}
             </ul>
             <div className={`sm:hidden flex flex-1 justify-end items-center z-50`}>

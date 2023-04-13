@@ -9,7 +9,7 @@ const MenuPage = () => {
 
   return (
     <>
-        <Navbar />
+        <Navbar active={"menu"} />
         <Menu />
         <Footer />
     </>
