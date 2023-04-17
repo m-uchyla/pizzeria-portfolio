@@ -10,13 +10,13 @@ const Reviews = () => {
         let content = [];
         if(rating >= 0){
             for(let i=0; i<maxReview; i++){
-                if(rating == 0)content.push(<BsStar  />);
+                if(rating == 0)content.push(<BsStar key={"Star"+i+"|"+(Math.floor(Math.random() * 1000))} />);
                 if(rating>0 && rating<1){
-                    content.push(<BsStarHalf  />);
+                    content.push(<BsStarHalf key={"Star"+i+"|"+(Math.floor(Math.random() * 1000))}  />);
                     rating = 0;
                 }
                 if(rating>=1){
-                    content.push(<BsStarFill  />);
+                    content.push(<BsStarFill key={"Star"+i+"|"+(Math.floor(Math.random() * 1000))}  />);
                     rating--;
                 }
             }

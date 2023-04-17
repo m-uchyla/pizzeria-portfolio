@@ -57,8 +57,8 @@ const Navbar = ({active}) => {
                   
                     <ul className='list-none flex-col justify-end items-center flex-1 mt-7'>
                         {navLinks.map((link, index)=>(
-                        <div>
-                          <li key={link.id} className={`font-poppins text-[24px] text-white font-normal cursor-pointer py-7`} onClick={()=>{handleClickScroll(link.id);setOpenCloseNav((prev) => !prev)}}>
+                        <div key={link.id}>
+                          <li className={`font-poppins text-[24px] text-white font-normal cursor-pointer py-7`} onClick={()=>{handleClickScroll(link.id);setOpenCloseNav((prev) => !prev)}}>
                               <a href={link.href}>{link.title}</a>
                               
                           </li>
