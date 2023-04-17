@@ -16,6 +16,7 @@ import wegeWtorek from './wegeWtorek.png'
 import salamiSroda from './salamiSroda.png'
 import czerstwyCzwartek from './czerstwyCzwartek.png'
 import pracowityPiatek from './pracowityPiatek.png'
+import WM from "./WMlogo_lettersOnly.png"
 
 export {
     logo,
@@ -35,6 +36,7 @@ export {
     wegeWtorek,
     salamiSroda,
     czerstwyCzwartek,
-    pracowityPiatek
+    pracowityPiatek,
+    WM
     
 }
