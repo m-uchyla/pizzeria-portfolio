@@ -56,6 +56,7 @@ return (
             </div>
         </div>
     </div>
+    <div className='w-full h-[1px] bg-orange-gradient-pizzaRoller mt-10 mb-10'/>
 </>
   )
 }

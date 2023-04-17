@@ -165,3 +165,16 @@ export const promo = [
         img: pracowityPiatek
     }
 ]
+
+export const reviews = [
+    {
+        name: "Ania",
+        rating: 4.5,
+        desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia soluta quod, pariatur quis sequi atque natus velit esse, voluptates animi excepturi quos cumque optio nisi quasi dolorum est. Facere, voluptas."
+    },
+    {
+        name: "Maciek",
+        rating: 5,
+        desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia soluta quod, pariatur quis sequi atque natus velit esse, voluptates animi excepturi quos cumque optio nisi quasi dolorum est. Facere, voluptas."
+    },
+]

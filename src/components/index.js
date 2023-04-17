@@ -10,6 +10,7 @@ import Textarea from "./modules/Textarea";
 import Menu from "./sections/Menu"
 import Map from "./sections/Map";
 import LocationPin from "./modules/LocationPin";
+import Reviews from "./sections/Reviews";
 
 export{
     Button,
@@ -23,5 +24,6 @@ export{
     Textarea,
     Menu,
     Map,
-    LocationPin
+    LocationPin,
+    Reviews
 }

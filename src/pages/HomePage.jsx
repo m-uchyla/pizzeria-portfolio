@@ -1,5 +1,5 @@
 import {React, useEffect} from 'react'
-import { Navbar, Footer, Hero } from '../components'
+import { Navbar, Footer, Hero, Reviews } from '../components'
 import Ingredients from '../components/sections/Ingredients'
 import RandomPizzaRoller from '../components/sections/RandomPizzaRoller'
 
@@ -16,6 +16,7 @@ const Home = () => {
             <Hero />
             <Ingredients />
             <RandomPizzaRoller />
+            <Reviews />
             <Footer />
         </div>
     </>
