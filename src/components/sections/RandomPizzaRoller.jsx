@@ -28,14 +28,14 @@ return (
 <>
     <div className='w-full h-[1px] bg-orange-gradient-pizzaRoller mt-20 mb-10'/>
     <div className='flex sm:flex-row flex-col items-center justify-between'>
-        <div className='sm:w-[600px]'>
+        <div className='md:w-[600px]'>
         {rollPizza !== pizzaNames[0] ?
             <div className='flex flex-col justify-center items-center'>
-                <p className='sm:text-[42px] text-[28px] font-semibold text-gradient'>Twoja pizza na dziś to:</p> 
-                <span className='sm:text-[42px] text-[25px] font-semibold text-zinc-700'>{rollPizza.name.toUpperCase()}</span>
+                <p className='md:text-[42px] sm:text-[26px] text-[23px] font-semibold text-gradient'>Twoja pizza na dziś to:</p> 
+                <span className='md:text-[42px] sm:text-[30px] text-[23px] font-semibold text-zinc-700'>{rollPizza.name.toUpperCase()}</span>
             </div>
             : 
-            <p className={`sm:text-[42px] text-[25px] sm:mb-5 font-semibold text-gradient`}> Nie możesz się zdecydować? </p>
+            <p className={`md:text-[42px] sm:text-[28px] text-[23px] sm:mb-5 font-semibold text-gradient`}> Nie możesz się zdecydować? </p>
         }
         {rollPizza !== pizzaNames[0] ?
         <div className='flex flex-col items-center'>
@@ -45,7 +45,7 @@ return (
             </div>
         </div>
         : 
-            <p className='sm:text-[42px] text-[23px] sm:mb-0 mb-5 font-semibold text-gradient'>Niech los zadecyduje za Ciebie!</p>
+            <p className='md:text-[42px] sm:text-[28px] text-[23px] sm:mb-0 mb-5 font-semibold text-gradient'>Niech los zadecyduje za Ciebie!</p>
         }
         </div>
         <div className='sm:w-[360px]'>

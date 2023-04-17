@@ -12,8 +12,8 @@ const Hero = () => {
 
   return (
     <div className='mt-20'>
-      <div className=' absolute sm:top-[-140px] sm:right-[-300px] top-[20px] xs:right-[-240px] right-[-270px]'>
-        <img src={pizza} className='xl:w-[800px] sm:w-[770px] w-[400px]'/>
+      <div className=' absolute md:top-[-140px] sm:top-[-90px] sm:right-[-300px] top-[20px] xs:right-[-240px] right-[-270px]'>
+        <img src={pizza} className='xl:w-[800px] md:w-[770px] sm:w-[600px] w-[400px]'/>
       </div>  
       <div className='flex flex-col max-w-[60%]'>
         <h1 className='xl:text-[72px] sm:text-[62px] xs:text-[40px] text-[32px] text-zinc-700 font-bold'>Inne pizze są dobre, <br />

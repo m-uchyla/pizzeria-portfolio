@@ -7,7 +7,7 @@ const Contact = () => {
 
   return (
     <section id="contact" className='sm:my-10'>
-        <div className='flex sm:flex-row flex-col sm:gap-36'>
+        <div className='flex md:flex-row flex-col md:gap-12'>
           <div className='flex-1 sm:my-5 sm:py-5'>
             <h2 className='text-center font-bold text-[40px] text-gradient m-10'>Kontakt</h2>
             <p className='text-justify-center text-zinc'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in turpis ultricies, consequat justo vitae, consequat turpis. Nulla semper libero at orci sagittis dictum at in nulla. Donec ornare condimentum sem vitae ornare. Pellentesque consequat mauris at ex lobortis consectetur. Cras pellentesque laoreet lobortis. Sed accumsan nisi eget libero interdum pellentesque in pretium arcu. In at nibh nec tortor hendrerit porttitor.</p>
@@ -29,7 +29,7 @@ const Contact = () => {
                   <li>9:00 - 0:00</li>
                 </ul>
               </div>
-              <div className='text-center'>
+              <div className='md:text-center'>
                 <h3 className='font-bold text-[23px] text-gradient mt-5 mb-1'>Telefon</h3>
                 <p className='text-zinc-700'>(+48) 123 456 789</p>
                 <h3 className='font-bold text-[23px] text-gradient mt-5 mb-1'>Email</h3>
