@@ -20,6 +20,12 @@ const Navbar = ({active}) => {
 
   window.addEventListener('scroll', changeBackground);
 
+  if(openCloseNav){
+    document.getElementsByTagName("body")[0].style.overflow = "hidden";
+  }else{
+    document.getElementsByTagName("body")[0].style.overflow = "auto";
+  }
+
   return (
     <div className='sm:pb-10 pb-20'>
     <section id="navbar" className={`my-2 py-3 ${navbar ? "navbar-fixed active" : "navbar-absolute"} top-[-8px] left-0 w-full`}>
@@ -41,25 +47,50 @@ const Navbar = ({active}) => {
                 ))}
             </ul>
             <div className={`sm:hidden flex flex-1 justify-end items-center z-50`}>
-
                 <div className={`${!openCloseNav ? 'menu_burger' : 'menu_burger open'}`}>
                     <div className={` ${navbar ? "menu_burger-btn-fixed" : "menu_burger-btn"}  ${openCloseNav ? "fixed z-10" : "static z-10"}`} 
                     onClick={() => {setOpenCloseNav((prev) => !prev);setInitNav(false)}} 
                     />
                 </div>
-                <div className={`p-6 bg-orange-gradient fixed top-0 right-0 w-[100%] h-[50%] ${(initNav) ? "hidden" : "flex"} ${openCloseNav ? "sidebar" : "sidebar-out"}`}>
-                    <ul className='list-none flex-col justify-end items-center flex-1 mt-10'>
+                <div className={`-left-[100px] w-[200%] h-[200vh] absolute ${openCloseNav ? "bg-in" : "bg-out"}`}></div>
+                <div className={`p-6 bg-primary fixed top-0 right-0 w-[70%] h-[100%] ${(initNav) ? "hidden" : "flex flex-col"} ${openCloseNav ? "sidebar" : "sidebar-out"}`}>
+                  
+                    <ul className='list-none flex-col justify-end items-center flex-1 mt-7'>
                         {navLinks.map((link, index)=>(
-                        <li key={link.id} className={`font-poppins text-[30px] text-white font-normal cursor-pointer`} onClick={()=>{handleClickScroll(link.id);setOpenCloseNav((prev) => !prev)}}>
-                            <a href={link.href}>{link.title}</a>
-                        </li>
+                        <div>
+                          <li key={link.id} className={`font-poppins text-[24px] text-white font-normal cursor-pointer py-7`} onClick={()=>{handleClickScroll(link.id);setOpenCloseNav((prev) => !prev)}}>
+                              <a href={link.href}>{link.title}</a>
+                              
+                          </li>
+                          {((index+1) == navLinks.length) ? "" : <div className='w-full h-[1px] bg-white'/>}
+                        </div>
                         ))}
                     </ul>
+                    <div className='text-white border-2 border-cream rounded-xl p-4 mb-10'>
+                      <h4 className='text-center font-semibold text-[16px] my-2'>Godziny otwarcia</h4>
+                      <div className='flex justify-evenly gap-y-10'>
+                        <ul>
+                          <li>Pon</li>
+                          <li>Wt</li>
+                          <li>Śr</li>
+                          <li>Czw</li>
+                          <li>Pt</li>
+                        </ul>
+                        <ul>
+                          <li>11:00 - 23:00</li>
+                          <li>9:00 - 23:00</li>
+                          <li>9:00 - 23:00</li>
+                          <li>Nieczynne</li>
+                          <li>9:00 - 0:00</li>
+                        </ul>
+                      </div>
+                    </div>
                 </div>
-            </div>
+                
             </div>
           </div>
         </div>
+      </div>
     </section>
     </div>
   )
