@@ -218,7 +218,8 @@ box-shadow: inset 8px 8px 20px -14px rgba(66, 68, 90, 1);
 
 .bg-in {
   animation: background-in 0.7s;
-  background-color:rgba(0, 0, 0, 0.8)
+  background-color:rgba(0, 0, 0, 0.8);
+  display: block;
 }
 
 .bg-out {

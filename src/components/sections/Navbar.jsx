@@ -52,7 +52,7 @@ const Navbar = ({active}) => {
                     onClick={() => {setOpenCloseNav((prev) => !prev);setInitNav(false)}} 
                     />
                 </div>
-                <div className={`-left-[100px] w-[200%] h-[200vh] absolute ${openCloseNav ? "bg-in" : "bg-out"}`}></div>
+                <div className={`-left-[100px] w-[200%] h-[200vh] absolute hidden ${openCloseNav ? "bg-in" : "bg-out"}`}></div>
                 <div className={`p-6 bg-primary fixed top-0 right-0 w-[70%] h-[100%] ${(initNav) ? "hidden" : "flex flex-col"} ${openCloseNav ? "sidebar" : "sidebar-out"}`}>
                   
                     <ul className='list-none flex-col justify-end items-center flex-1 mt-7'>
