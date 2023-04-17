@@ -15,7 +15,7 @@ const Hero = () => {
       <div className=' absolute md:top-[-140px] sm:top-[-90px] sm:right-[-300px] top-[20px] xs:right-[-240px] right-[-270px]'>
         <img src={pizza} className='xl:w-[800px] md:w-[770px] sm:w-[600px] w-[400px]'/>
       </div>  
-      <div className='flex flex-col max-w-[60%]'>
+      <div className='flex flex-col lg:max-w-[55%] max-w-[60%]'>
         <h1 className='xl:text-[72px] sm:text-[62px] xs:text-[40px] text-[32px] text-zinc-700 font-bold'>Inne pizze są dobre, <br />
             Nasza pizza jest <span className='text-gradient'>najlepsza</span>.</h1>
         <div className='sm:w-[500px] w-[200px] sm:flex-row flex-col mt-3 flex gap-x-2'>
