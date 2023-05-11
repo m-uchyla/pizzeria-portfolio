@@ -81,7 +81,7 @@ export const menuList = [
         name: "Vege" ,
         img: vege,
         ingredients: " pomidory s.marzano D.O.P. / fiordilatte /  grana D.O.P. / pieczona papryka peperoni/ duszony por/ karmelizowane orzechy/ pasta z karczochów/ kiełki groszku ",
-        desc: "Pizza Vege to idealne połączenie grillowanych warzyw i syra heh.",
+        desc: "Pizza Vege to idealne połączenie grillowanych warzyw i syra.",
     },
     {
         id: "MeatPizza",
@@ -109,7 +109,7 @@ export const menuList = [
         name: "Pepperoni" ,
         img: pepperoni,
         ingredients: "pomidory s.marzano D.O.P. / fiordilatte /  grana D.O.P. / pieczona papryka peperoni / pepperoncino ",
-        desc: "Pizza Pepperoni jest idealna na wieczór, ale boli pupa rano przy kupie, bo jest ostra.",
+        desc: "Pizza Pepperoni jest idealna na wieczór, ale zalecamy ostrożność, bo jest ostra również rano.",
     }
 ]
 
