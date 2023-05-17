@@ -81,7 +81,7 @@ export const menuList = [
         name: "Vege" ,
         img: vege,
         ingredients: " pomidory s.marzano D.O.P. / fiordilatte /  grana D.O.P. / pieczona papryka peperoni/ duszony por/ karmelizowane orzechy/ pasta z karczochów/ kiełki groszku ",
-        desc: "Pizza Vege to idealne połączenie grillowanych warzyw i syra.",
+        desc: "Pizza Vege to idealne połączenie grillowanych warzyw i sera.",
     },
     {
         id: "MeatPizza",
